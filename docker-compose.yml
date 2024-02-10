@@ -8,8 +8,8 @@ services:
     ports:
       - 8545:8545       # RPC
       - 8546:8546       # websocket
-      - 30303:30303     # P2P TCP (currently unused)
-      - 30303:30303/udp # P2P UDP (currently unused)
+      - 33333:33333     # P2P TCP (currently unused)
+      - 33333:33333/udp # P2P UDP (currently unused)
       - 7301:6060       # metrics
     env_file:
       - .env.default
